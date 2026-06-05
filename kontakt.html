@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | ETŠ Nikola Tesla</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+    <img src="/IMG/logo.svg" alt="Logo ETŠ Nikola Tesla" class="navbar-logo me-2">
+    <span class="fw-bold">ETŠ "NIKOLA TESLA"</span>
+</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Početna</a></li>
+                <li class="nav-item"><a class="nav-link" href="o-skoli.html">O školi</a></li>
+                <li class="nav-item"><a class="nav-link" href="smerovi.html">Smerovi</a></li>
+                <li class="nav-item"><a class="nav-link active" href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Pišite nam</h2>
+                    <form id="contactForm" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label text-muted fs-7 fw-semibold text-uppercase">Ime i prezime</label>
+                            <input type="text" class="form-control" id="name" required placeholder="Unesite Vaše ime">
+                            <div class="invalid-feedback">Molimo unesite Vaše ime.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label text-muted fs-7 fw-semibold text-uppercase">E-mail adresa</label>
+                            <input type="email" class="form-control" id="email" required placeholder="ime@primer.com">
+                            <div class="invalid-feedback">Molimo unesite ispravnu e-mail adresu.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label text-muted fs-7 fw-semibold text-uppercase">Poruka</label>
+                            <textarea class="form-control" id="message" rows="5" required placeholder="Vaša pitanja ili predlozi..."></textarea>
+                            <div class="invalid-feedback">Polje za poruku ne može biti prazno.</div>
+                        </div>
+                        <button type="submit" class="btn btn-danger btn-lg px-4">Pošalji poruku</button>
+                    </form>
+                    <div id="formSuccess" class="alert alert-success mt-3 d-none" role="alert">
+                        Poruka je uspešno poslata! Odgovorićemo u najkraćem roku.
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Lokacija škole</h2>
+                    <div class="mb-4">
+                        <p class="text-muted mb-2"><i class="fa-solid fa-location-dot text-danger me-2"></i> Aleksandra Medvedeva 18, Niš 18104</p>
+                        <p class="text-muted mb-2"><i class="fa-solid fa-envelope text-danger me-2"></i> info@etstesla.ni.ac.rs</p>
+                    <h4 class="fw-bold mb-3 fs-5">Gde se nalazimo:</h4>
+                    <div class="ratio ratio-16x9 rounded shadow-sm border">
+                    <iframe 
+                        src="https://maps.google.com/maps?q=ETŠ%20Nikola%20Tesla,%20Mileševska%2042,%20Beograd&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light border-top border-bottom">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-md-4 border-end border-2 border-white-300">
+                    <i class="fa-solid fa-clock text-danger fs-3 mb-2"></i>
+                    <h5 class="fw-bold mb-1">Radno vreme</h5>
+                    <p class="text-muted small mb-0">Ponedeljak - Petak: 08:00 - 20:00</p>
+                </div>
+                <div class="col-md-4 border-end border-2 border-white-300">
+                    <i class="fa-solid fa-user-tie text-danger fs-3 mb-2"></i>
+                    <h5 class="fw-bold mb-1">Sekretarijat škole</h5>
+                    <p class="text-muted small mb-0">Prijem stranaka: 11:00 - 13:00</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fa-solid fa-bus text-danger fs-3 mb-2"></i>
+                    <h5 class="fw-bold mb-1">Kako doći do nas?</h5>
+                    <p class="text-muted small mb-0">Linije gradskog prevoza: 14, 19, 21A, 22, 29, 83</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-4 text-center text-md-start">
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-danger text-uppercase small tracking-wider mb-3">ETŠ Nikola Tesla</h5>
+                    <p class="text-white-50 small">Spremamo generacije mladih stručnjaka za izazove digitalnog doba, kroz spoj tradicije i najmodernijih tehnologija.</p>
+                </div>
+                <div class="col-md-4 text-md-center">
+                    <h5 class="fw-bold text-danger text-uppercase small tracking-wider mb-3">Navigacija</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none small link-light">Početna</a></li>
+                        <li class="mb-2"><a href="o-skoli.html" class="text-white-50 text-decoration-none small link-light">O školi</a></li>
+                        <li class="mb-2"><a href="smerovi.html" class="text-white-50 text-decoration-none small link-light">Smerovi</a></li>
+                        <li><a href="kontakt.html" class="text-white-50 text-decoration-none small link-light">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 text-md-end">
+                    <h5 class="fw-bold text-danger text-uppercase small tracking-wider mb-3">Pratite nas</h5>
+                    <div class="mb-3">
+                        <a href="https://www.instagram.com/etstesla/" class="text-white-50 me-3 fs-5 link-danger"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/teslaets" class="text-white-50 me-3 fs-5 link-danger"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/channel/UCgVlxoR83jDUiZuTLbmSBog" class="text-white-50 me-3 fs-5 link-danger"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="text-white-50 fs-5 link-danger"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <p class="text-white-50 small mb-0"><i class="fa-solid fa-envelope me-2"></i>info@etsnikolatesla.edu.rs</p>
+                </div>
+            </div>
+            
+            <hr class="border-secondary opacity-25 my-4">
+            
+            <div class="text-center">
+                <p class="mb-1 text-white-50 small text-uppercase tracking-wider">© 2026 ETŠ "Nikola Tesla". Sva prava zadržana.</p>
+                <p class="mb-0 text-white-50 opacity-50 updated-text" style="font-size: 0.75rem;">All Rights Reserved. | Školski projekat Filip Dimitrov</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

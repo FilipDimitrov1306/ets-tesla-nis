@@ -1,0 +1,65 @@
+
+:root {
+    --dark-primary: #0f172a; 
+    --accent-red: #dc3545;
+    --text-muted: #64748b;
+}
+
+.navbar-logo {
+    height: 40px;
+    width: auto;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #334155;
+    background-color: #ffffff;
+}
+
+.hero-section {
+    min-height: 60vh;
+}
+.text-muted-light {
+    color: #cbd5e1;
+}
+
+.hero-naslov {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.navbar-brand span {
+    letter-spacing: 1px;
+}
+.hover-red:hover {
+    color: var(--accent-red) !important;
+    transition: color 0.2s ease-in-out;
+}
+
+
+.feature-card, .news-card, .profile-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover, .news-card:hover, .profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+
+
+.fs-7 {
+    font-size: 0.85rem;
+}
+.tracking-wide {
+    letter-spacing: 0.05em;
+}
+.tracking-wider {
+    letter-spacing: 0.1em;
+}
+
+
+.form-control:focus {
+    border-color: var(--accent-red);
+    box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
+}
